@@ -16,7 +16,7 @@ import java.util.Random;
 import com.tools.KRA.Message;
 import com.tools.KRA.Utils;
 
-public class TAP {
+public class AP {
 
 	public static int PORT = 12345;// 监听的端口号
 	public static int auth_flag = 0;
@@ -29,9 +29,10 @@ public class TAP {
 	public static int Nonce = 0;
 
 	public static void main(String[] args) {
-		/*
-		 * String MasterKey = args[0]; String port = args[1];
-		 */
+		
+//		String MasterKey = args[0]; 
+//		int PORT = Integer.parseInt(args[1]);
+		 
 		MasterKey = "RAIN";
 		PORT = 12345;
 
@@ -200,7 +201,6 @@ public class TAP {
 									System.out.println("The plain text is: ");
 									System.out.println(plain);
 								} catch (EOFException e) {
-									e.printStackTrace();
 									System.out.println("end of data");
 									break;
 								}
@@ -215,7 +215,6 @@ public class TAP {
 					oos.close();
 
 				} catch (Exception e) {
-					// TODO Auto-generated catch block
 					System.out.println("服务器 run 异常: " + e.getMessage());
 					e.printStackTrace();
 				} finally {

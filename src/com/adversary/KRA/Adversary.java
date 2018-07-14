@@ -101,6 +101,9 @@ public class Adversary {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+//		String IP_ADDR = args[0];
+//		int PORT1 = Integer.parseInt(args[1]);
+//		int PORT1 = Integer.parseInt(args[2]);
 		int PORT1 = 54321;
 		int PORT2 = 12345;
 		String IP_ADDR = "localhost";
@@ -225,64 +228,8 @@ public class Adversary {
 			// TODO Auto-generated catch block
 			Adversary.crackMsg(v1, v2);
 			System.out.println();
-			System.out.println(e);
 		}
 		
 	}
-	
-//	public static class Client extends Thread {
-//		private ObjectInputStream ois;
-//		private ObjectOutputStream oos;
-//		private Message msg;
-//		private int state = 0;
-//		
-//		public Client(ObjectInputStream ois, ObjectOutputStream oos, int state) {
-//			this.ois = ois;
-//			this.oos = oos;
-//			this.state = state;
-//			new Thread(this).start();
-//		}
-//		
-//		public void run() {
-//			
-//		}
-//	}
-//	
-//	public static class Server extends Thread {
-//		private ObjectInputStream ois;
-//		private ObjectOutputStream oos;
-//		private Message msg;
-//		public int state = 0;
-//		
-//		public Server(ObjectInputStream ois, ObjectOutputStream oos, int state) {
-//			this.ois = ois;
-//			this.oos = oos;
-//			this.state = state;
-//			new Thread(this).start();
-//		}
-//		
-//		public void run() {
-//			
-//		}
-//	}
-//	
-//	public class MyMessage {
-//		private ReentrantLock lock = new ReentrantLock();
-//		private Condition condA = lock.newCondition();
-//		private Condition condB = lock.newCondition();
-//		private int state = 0;
-//		
-//		public void withClient() {
-//			lock.lock();
-//			while (state == 0) {
-//				//send request
-//			}
-//			System.out.println("with client");
-//		}
-//		
-//		public void withAp() {
-//			lock.lock();
-//		}
-//	}
 
 }

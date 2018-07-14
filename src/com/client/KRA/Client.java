@@ -25,15 +25,14 @@ public class Client {
     public static final int PORT = 54321;//服务器端口号
     
 	public static void main(String[] args) {
-		/*String ip = args[0];
-		String port = args[1];
-		String MasterKey = args[2];
-		String filename = args[3];*/
+//		String IP_ADDR = args[0];
+//		int PORT = Integer.parseInt(args[1]);
+//		String MasterKey = args[2];
+//		String filename = args[3];
 		String MasterKey = "RAIN";
 		String filename = "data.txt";
 		
-		System.out.println("客户端启动...");    
-        System.out.println("当接收到服务器端字符为 \"OK\" 的时候, 客户端将终止\n");   
+		System.out.println("客户端启动...");      
         
         InetAddress ia;
         byte[] mac = null;
